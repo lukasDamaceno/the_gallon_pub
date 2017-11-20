@@ -1,0 +1,49 @@
+/*helpers*/
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background-repeat: repeat;
+	background-color: #000;
+	color: #fff;
+}
+
+main {
+	flex: 1 0 auto;
+}
+/*header*/
+.pub {
+	font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+/*fim header*/
+
+/*main*/
+button#confirm {
+	color: #fff;
+	transition: all ease-in-out 0.4s;
+	border: 1px #2e2e2e solid;
+	padding: 3px 7px;
+	background-color: #000;
+}
+
+button#confirm:hover {
+	border-color: #000;
+	background-color: #fff;
+	color: #000;
+}
+/*fim main*/
+
+/*footer*/
+footer {
+	padding-top: 20px;
+}
+
+.footer-copyright {
+	padding: 10px;
+}
+
+.footer-copyright p {
+	margin: 0;
+}
+/*fim footer*/
