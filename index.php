@@ -39,7 +39,7 @@
 							</ul>
 						</div>
 						<div class="col-md-6">
-							<div class="md-form">
+							<div class="md-form f-ref">
 								<h5>Refrigerante: </h5>
 								<input type="radio" name="ref" id="ref" value="0">
 								<span>Coca-Cola</span>
@@ -51,7 +51,7 @@
 								<span id="ref-qtd-lbl" class="d-none">Quantidade</span> <br>
 								<input type="range" name="ref-qtd" id="ref-qtd" class="d-none"><span id="ref-qtd-val"></span>
 							</div>
-							<div class="md-form">
+							<div class="md-form f-run">
 								<h5>Run: </h5>
 								<span id="run-qtd-lbl">Quantidade</span> <br>
 								<input type="range" name="run-qtd" id="run-qtd" min="10" max="20"><span id="run-qtd-val">Escolha</span>
