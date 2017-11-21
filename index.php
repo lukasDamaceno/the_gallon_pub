@@ -25,7 +25,7 @@
 					<h1 class="text-center pub font-italic">Cuba Libre</h1>
 					<p class="pub font-italic text-center">Componha seu drink e pague de acordo com sua intensidade.</p>
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-6 mb-5 mt-5">
 							<ul class="">
 								<li>
 									<h3>Cuba Fraca: R$15,00</h3>
@@ -37,14 +37,25 @@
 									<h3>Cuba Forte: R$25,00</h3>
 								</li>
 							</ul>
+
+							<div id="result">
+								<h4 class="d-none text-center"></h4>
+								<h1 class="d-none text-center"></h1>
+								
+								<ul class="d-none">
+									<li>Valores obtidos nas defuzzyficações</li>
+									<li id="um">Ex. 2: <span></span></li>
+									<li id="dois">Ex. 3: <span></span></li>
+								</ul>
+							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="md-form f-ref">
 								<h5>Refrigerante: </h5>
-								<input type="radio" name="ref" id="ref" value="0">
+								<input type="radio" name="ref" id="ref" value="coca">
 								<span>Coca-Cola</span>
 								<br>
-								<input type="radio" name="ref" id="ref" value="1">
+								<input type="radio" name="ref" id="ref" value="pepsi">
 								<span>Pepsi</span>
 								<br>
 								<br>
@@ -54,14 +65,14 @@
 							<div class="md-form f-run">
 								<h5>Run: </h5>
 								<span id="run-qtd-lbl">Quantidade</span> <br>
-								<input type="range" name="run-qtd" id="run-qtd" min="10" max="20"><span id="run-qtd-val">Escolha</span>
+								<input type="range" name="run-qtd" id="run-qtd" min="10" max="30"><span id="run-qtd-val">Escolha</span>
 							</div>
 							<div class="md-form">
-								<input type="radio" name="gelo" id="gelo" disabled checked> <span>Gelo (20ml)</span>
+								<input type="radio" value="20" name="gelo" id="gelo" disabled checked> <span>Gelo (20ml)</span>
 							</div>
 
 							<div class="md-form">
-								<button type="button" id="confirm">Confirmar</button>
+								<button type="button" id="compose">Compor</button>
 							</div>
 						</div>
 					</div>
