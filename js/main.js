@@ -241,15 +241,22 @@ $(document).ready(function() {
 		} else {
 			psRef = pertPepsi(c1.refQtd);
 		}
+
+		//pertsRef -> Objeto com o nome do refresco e as pertinencias pra cada paladar;
 		var prf = new pertsRef(psRef[0], psRef[1], psRef[2], psRef[3]);
 
 		var pRum = pertRum(c1.runQtd);
+
+		//pertsRum -> Objeto com as pertinencias de cada intensidade do rum;
 		var prm = new pertsRum(pRum[0], pRum[1], pRum[2]);
 
+		//Gelo sempre 20ml e pert = 1;
 		var pgl = 1;
 
+		//pertPaladares() retorna a pertinencia de cada paladar (forte, suave ou fraco) de acordo com o ex. 2;
 		var paladares = pertPaladares(prf, prm, pgl);
 
+		//paladar() retorna o maximo das pertinencias dos paladares;
 		var paladarFinal = paladar(paladares[0], paladares[1], paladares[2]);
 
 
