@@ -126,7 +126,7 @@ $(document).ready(function() {
 		else throw new Error('QUE PORRA É ESSA CUZÃO?');
 	}
 
-	function printaPreco(p, ps) {
+	function printaPreco(p, ps, ref, run) {
 		var preco;
 		if(p[0] == "forte") {
 			preco = "R$25,00";
@@ -142,8 +142,10 @@ $(document).ready(function() {
 		$('#result h4').html('Seu drink possui um paladar '+p[0]+'. Você pagará: ').removeClass('d-none');
 		$('#result h1').html(preco).removeClass('d-none');
 
-		$('#result ul li#um span').html('Forte: '+ps[0]+', Suave: '+ps[1]+', Fraco: '+ps[2]);
-		$('#result ul li#dois span').html(p[1]);
+		$('#result ul li#pert-pld span').html('Forte: '+ps[0]+', Suave: '+ps[1]+', Fraco: '+ps[2]);
+		$('#result ul li#pld-final span').html(p[1]);
+		$('#result ul li#pld-ref span').html('Forte: '+ref.forte+', Suave: '+ref.suave+', Fraco: '+ref.fraco+'; Tipo: ' +ref.tipo);
+		$('#result ul li#pld-run span').html('Forte: '+run.forte+', Suave: '+run.suave+', Fraco: '+run.fraco);
 		$('#result ul').removeClass('d-none');
 	}
 
@@ -260,6 +262,6 @@ $(document).ready(function() {
 		var paladarFinal = paladar(paladares[0], paladares[1], paladares[2]);
 
 
-		printaPreco(paladarFinal, paladares);
+		printaPreco(paladarFinal, paladares, prf, prm);
 	});
 });

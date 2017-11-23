@@ -43,9 +43,11 @@
 								<h1 class="d-none text-center"></h1>
 								
 								<ul class="d-none">
-									<li>Valores obtidos nas defuzzyficações</li>
-									<li id="um">Ex. 2: <span></span></li>
-									<li id="dois">Ex. 3: <span></span></li>
+									<p>Valores obtidos nos calculos</p>
+									<li id="pert-pld">Pert. dos paladares: <span></span></li>
+									<li id="pld-final">Valor do paladar final: <span></span></li>
+									<li id="pld-ref">Pert. do refrigerante: <span></span></li>
+									<li id="pld-run">Pert. do run: <span></span></li>
 								</ul>
 							</div>
 						</div>
@@ -60,12 +62,12 @@
 								<br>
 								<br>
 								<span id="ref-qtd-lbl" class="d-none">Quantidade</span> <br>
-								<input type="range" name="ref-qtd" id="ref-qtd" class="d-none"><span id="ref-qtd-val"></span>
+								<input type="range" name="ref-qtd" id="ref-qtd" class="d-none" step="0.1"><span id="ref-qtd-val"></span>
 							</div>
 							<div class="md-form f-run">
 								<h5>Run: </h5>
 								<span id="run-qtd-lbl">Quantidade</span> <br>
-								<input type="range" name="run-qtd" id="run-qtd" min="10" max="30"><span id="run-qtd-val">Escolha</span>
+								<input type="range" name="run-qtd" id="run-qtd" min="10" max="30" step="0.1"><span id="run-qtd-val">Escolha</span>
 							</div>
 							<div class="md-form">
 								<input type="radio" value="20" name="gelo" id="gelo" disabled checked> <span>Gelo (20ml)</span>
