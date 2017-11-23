@@ -1,3 +1,6 @@
+//main.js
+//Autores: Jackson Pereira e Lukas Damaceno
+
 $(document).ready(function() {
 
 	

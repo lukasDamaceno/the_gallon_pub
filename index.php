@@ -1,3 +1,6 @@
+<!-- index.php -->
+<!-- Autores: Jackson Pereira e Lukas Damaceno -->
+
 <!DOCTYPE html>
 <html>
 <head>
