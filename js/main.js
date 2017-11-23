@@ -2,9 +2,34 @@
 //Autores: Jackson Pereira e Lukas Damaceno
 
 $(document).ready(function() {
+	// vars e objetos
+	function cubaLibre(tipo, ref, run, gelo) {
+		this.refTipo = tipo;
+		this.refQtd = ref;
+		this.runQtd = run;
+		this.gelo = gelo;
+	}
 
+	function pertsRef(tipo, forte, suave, fraco) {
+		this.tipo = tipo;
+		this.forte = forte;
+		this.suave = suave;
+		this.fraco = fraco;
+	}
+
+	function pertsRum(forte, suave, fraco) {
+		this.forte = forte;
+		this.suave = suave;
+		this.fraco = fraco;
+	}
+
+	var flagref = 0;
+	var flagrun = 0;
+	// fim vars e objetos
+
+	$('#run-qtd').val($('#run-qtd').attr('min')); //inicializando range do run com o minimo
 	
-
+	//funcs 
 	function pertCoca(x) {
 		var forte, suave, fraco;
 
@@ -152,30 +177,6 @@ $(document).ready(function() {
 		$('#result ul').removeClass('d-none');
 	}
 
-	function cubaLibre(tipo, ref, run, gelo) {
-		this.refTipo = tipo;
-		this.refQtd = ref;
-		this.runQtd = run;
-		this.gelo = gelo;
-	}
-
-	function pertsRef(tipo, forte, suave, fraco) {
-		this.tipo = tipo;
-		this.forte = forte;
-		this.suave = suave;
-		this.fraco = fraco;
-	}
-
-	function pertsRum(forte, suave, fraco) {
-		this.forte = forte;
-		this.suave = suave;
-		this.fraco = fraco;
-	}
-
-	var flagref = 0;
-	var flagrun = 0;
-
-	$('#run-qtd').val($('#run-qtd').attr('min'));
 
 	function valida() {
 		var errflag = 0;
@@ -204,6 +205,10 @@ $(document).ready(function() {
 		}, 200);
 		jelem.removeClass('pisca-out');
 	}
+
+	//fim funcs
+
+	//eventos
 
 	$('#ref-qtd').on('input', function() {
 		var val = $(this).val();
@@ -267,4 +272,6 @@ $(document).ready(function() {
 
 		printaPreco(paladarFinal, paladares, prf, prm);
 	});
+
+	//fim eventos
 });
